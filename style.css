@@ -1,0 +1,27 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+nav{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+     margin: 0 150px;
+}
+nav a:hover{
+    color: grey;
+}
+
