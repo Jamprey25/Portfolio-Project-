@@ -4,6 +4,11 @@ body {
     padding: 0;
     background-image: url(assets/background.jpeg);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    color:white;
+    
+}
+p{
+    font-weight: bold;
 }
 nav{
     text-align: center;
@@ -47,8 +52,29 @@ nav a:hover{
     color: grey;
 }
 
+#Resume{
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#Resume button{
+    background-color: rgb(57,50,50);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#Resume button:hover{
+    background-color: green;
+}
 .about-section {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(57,50,50, 0.8);
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -74,7 +100,7 @@ nav a:hover{
     padding: 0;
 }
 .skillset li {
-    background-color: #f0f0f0;
+    background-color: rgba(57, 50, 50, 0.8);
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
@@ -86,5 +112,131 @@ nav a:hover{
 .skillset li:hover{
     background-color:green;
     cursor: pointer;
+}
+
+
+
+.contact-section {
+    background-color: rgba(57, 50, 50, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+.contact-section h1 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+.contact-section a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact-section a:hover{
+    color: green;
+}
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#container h1 {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+    background-color: rgba(57, 50, 50, 0.9);
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid rgb(33, 90, 41);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.project h4 {
+    color: lightgray;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.project ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.project li {
+    color: white;
+    margin: 10px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 1.6;
+}
+
+.project li:last-child {
+    border-bottom: none;
+}
+
+.project a {
+    display: inline-block;
+    background-color: rgb(33, 90, 41);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project a:hover {
+    background-color: green;
+    transform: scale(1.05);
+}
+
+/* Responsive design for projects */
+@media (max-width: 768px) {
+    #container {
+        padding: 15px;
+        margin-top: 80px;
+    }
+    
+    .project {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    
+    .project h2 {
+        font-size: 20px;
+    }
+    
+    nav a {
+        margin: 0 50px;
+    }
 }
 
